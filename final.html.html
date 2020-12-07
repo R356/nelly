@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Frond-End-Web-Dev</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #light blue;
+  color: black;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #light blue;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: circle;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #light blue;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+<div style="background-image: url('image2.jpg');">
+</style>
+</head>
+<body>
+
+<div style="background:sky blue;padding:10px">
+  <h4 style="text-align:center">Feel free to look around my super cool website.</h4>
+</div>
+
+<div class="header">
+  <h1>My Website Portfolio</h1>
+  <p>A website created by Ronell Jacobs.</p>
+</div>
+
+<div class="navbar">
+  <a href="https://www.facebook.com">Facebook</a>
+  <a href="https://www.instagram.com">Instagram</a>
+  <a href="https://www.whatsapp.com">Whatsapp</a>
+  <a href="https://www.github.com" class="right">Github</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <P>Hey! my name is Ronell Jacobs and i've just started an exiting journey with the younglings group i'm very ambitios and always looking out to do my best. </p>
+    
+   <img src="ronell jacobs.jpg" alt="" width="250" height="250">
+    
+  </div>
+  <div class="main">
+    <h2>Skills</h2>
+    <h5>I like to keep myself motivated and love to communicate with others.I'm always out for a challange and loves helping others.</h5>
+   <img src="output.jpg alt="" width="200" height="200">
+    <p>I'm not an experience software developer but with time and hopes i'll surely be successful. </p>
+    <p>I have a good source of motivitation that strives me to do my best. cuurently there's no projects done yet but i'll keep it posted as soon as i'm getting started.</p>
+    <br>
+    <h2>Contact</h2>
+    <h5>responsive form</h5>
+<p>feel free to contact me at 0848916824 or email at ronelljacobs06@gmail.com </p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-30">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-80">
+      <input type="text" id="fname" name="firstname" placeholder="Your name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-30">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-80">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-30">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-80">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="s-a">S-A</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-30">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-80">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+    
+    <p>respond on the above form.</p>
+    <p>work is still in progress please be patient.</P>
+</div>
+<img src="contact.jpg alt="" witdh="250">
+</body>
+</html>
